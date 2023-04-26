@@ -1,7 +1,14 @@
+function MyArray(){
+    var arr = [1,4,78,23];
+    this.remove = function(number){
+        arr[arr.length--] = number;
+        return arr;
+    }
+}
 
-    const num=[1,2,3,4,5 ];
-    const last=num.pop();
-    console.log(num);
-    console.log(last);
+var arr = new MyArray();
+console.log(arr.remove());
+
+
 
    
